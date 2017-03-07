@@ -1,5 +1,10 @@
+nodejs:
+  version: '6.9.0'
 hooks:
   pre_setup: yarn install
 tests:
   - yarn run test
   - yarn --version
+  - ls -la node_modules
+cache:
+  nocache: true
